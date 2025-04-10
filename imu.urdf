@@ -20,7 +20,7 @@
      <visual>
        <origin rpy="0 0 0" xyz="0 0 0"/>
        <geometry>
-         <mesh filename="package://iris_description/meshes/iris.dae" scale="1 1 1"/>
+         <mesh filename="package://iris/meshes/iris.dae" scale="1 1 1"/>
        </geometry>
      </visual>
      <collision>
@@ -172,7 +172,7 @@
    <gazebo>
      <plugin filename="librotors_gazebo_multirotor_base_plugin.so" name="multirotor_base_plugin">
        <robotNamespace>iris</robotNamespace>
-       <linkName>iris/base_link</linkName>
+       <linkName>imu</linkName>
        <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
      </plugin>
    </gazebo>
@@ -181,7 +181,7 @@
      <axis xyz="0 0 1"/>
      <!-- TODO(ff): not currently set because it's not yet supported -->
      <!-- <limit effort="2000" velocity="${max_rot_velocity}" /> -->
-     <parent link="iris/base_link"/>
+     <parent link="imu"/>
      <child link="iris/rotor_0"/>
    </joint>
    <link name="iris/rotor_0">
@@ -192,7 +192,7 @@
      </inertial>
      <visual>
        <geometry>
-         <mesh filename="package://iris_description/meshes/propeller_ccw.dae" scale="0.1 0.1 0.1"/>
+         <mesh filename="package://iris/meshes/propeller_ccw.dae" scale="0.1 0.1 0.1"/>
          <!-- The propeller meshes have a radius of 1m -->
          <!-- <box size="${2*radius_rotor} 0.01 0.005"/> -->
        </geometry>
@@ -234,7 +234,7 @@
      <axis xyz="0 0 1"/>
      <!-- TODO(ff): not currently set because it's not yet supported -->
      <!-- <limit effort="2000" velocity="${max_rot_velocity}" /> -->
-     <parent link="iris/base_link"/>
+     <parent link="imu"/>
      <child link="iris/rotor_1"/>
    </joint>
    <link name="iris/rotor_1">
@@ -245,7 +245,7 @@
      </inertial>
      <visual>
        <geometry>
-         <mesh filename="package://iris_description/meshes/propeller_ccw.dae" scale="0.1 0.1 0.1"/>
+         <mesh filename="package://iris/meshes/propeller_ccw.dae" scale="0.1 0.1 0.1"/>
          <!-- The propeller meshes have a radius of 1m -->
          <!-- <box size="${2*radius_rotor} 0.01 0.005"/> -->
        </geometry>
@@ -287,7 +287,7 @@
      <axis xyz="0 0 1"/>
      <!-- TODO(ff): not currently set because it's not yet supported -->
      <!-- <limit effort="2000" velocity="${max_rot_velocity}" /> -->
-     <parent link="iris/base_link"/>
+     <parent link="imu"/>
      <child link="iris/rotor_2"/>
    </joint>
    <link name="iris/rotor_2">
@@ -298,7 +298,7 @@
      </inertial>
      <visual>
        <geometry>
-         <mesh filename="package://iris_description/meshes/propeller_cw.dae" scale="0.1 0.1 0.1"/>
+         <mesh filename="package://iris/meshes/propeller_cw.dae" scale="0.1 0.1 0.1"/>
          <!-- The propeller meshes have a radius of 1m -->
          <!-- <box size="${2*radius_rotor} 0.01 0.005"/> -->
        </geometry>
@@ -340,7 +340,7 @@
      <axis xyz="0 0 1"/>
      <!-- TODO(ff): not currently set because it's not yet supported -->
      <!-- <limit effort="2000" velocity="${max_rot_velocity}" /> -->
-     <parent link="iris/base_link"/>
+     <parent link="imu"/>
      <child link="iris/rotor_3"/>
    </joint>
    <link name="iris/rotor_3">
@@ -351,7 +351,7 @@
      </inertial>
      <visual>
        <geometry>
-         <mesh filename="package://iris_description/meshes/propeller_cw.dae" scale="0.1 0.1 0.1"/>
+         <mesh filename="package://iris/meshes/propeller_cw.dae" scale="0.1 0.1 0.1"/>
          <!-- The propeller meshes have a radius of 1m -->
          <!-- <box size="${2*radius_rotor} 0.01 0.005"/> -->
        </geometry>
