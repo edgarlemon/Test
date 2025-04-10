@@ -4,10 +4,10 @@
  <!-- |    EDITING THIS FILE BY HAND IS NOT RECOMMENDED                                 | -->
  <!-- =================================================================================== -->
  <robot name="iris">
-   <link name="imu"/>
+   <link name="camera"/>
    <joint name="iris/base_joint" type="fixed">
      <origin rpy="4.71 1.57 3.14" xyz="0 0 0"/>
-     <parent link="imu"/>
+     <parent link="camera"/>
      <child link="iris/base_link_inertia"/>
    </joint>
    <link name="iris/base_link_inertia">
@@ -57,7 +57,7 @@
    </link>
  
    <joint name="stand_0_joint" type="fixed">
-     <parent link="imu"/>
+     <parent link="camera"/>
      <child link="stand_0"/>
      <origin xyz="0.13 -0.22 0.023"/>
    </joint> 
@@ -85,7 +85,7 @@
    </link>
  
    <joint name="stand_1_joint" type="fixed">
-     <parent link="imu"/>
+     <parent link="camera"/>
      <child link="stand_1"/>
      <origin xyz="-0.13 0.2 0.023"/>
    </joint> 
@@ -113,7 +113,7 @@
    </link>
  
    <joint name="stand_2_joint" type="fixed">
-     <parent link="imu"/>
+     <parent link="camera"/>
      <child link="stand_2"/>
      <origin xyz="0.13 0.22 0.023"/>
    </joint> 
@@ -141,7 +141,7 @@
    </link>
  
    <joint name="stand_3_joint" type="fixed">
-     <parent link="imu"/>
+     <parent link="camera"/>
      <child link="stand_3"/>
      <origin xyz="-0.13 -0.2 0.023"/>
    </joint> 
@@ -172,7 +172,7 @@
    <gazebo>
      <plugin filename="librotors_gazebo_multirotor_base_plugin.so" name="multirotor_base_plugin">
        <robotNamespace>iris</robotNamespace>
-       <linkName>imu</linkName>
+       <linkName>camera</linkName>
        <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
      </plugin>
    </gazebo>
@@ -181,7 +181,7 @@
      <axis xyz="0 0 1"/>
      <!-- TODO(ff): not currently set because it's not yet supported -->
      <!-- <limit effort="2000" velocity="${max_rot_velocity}" /> -->
-     <parent link="imu"/>
+     <parent link="camera"/>
      <child link="iris/rotor_0"/>
    </joint>
    <link name="iris/rotor_0">
@@ -234,7 +234,7 @@
      <axis xyz="0 0 1"/>
      <!-- TODO(ff): not currently set because it's not yet supported -->
      <!-- <limit effort="2000" velocity="${max_rot_velocity}" /> -->
-     <parent link="imu"/>
+     <parent link="camera"/>
      <child link="iris/rotor_1"/>
    </joint>
    <link name="iris/rotor_1">
@@ -287,7 +287,7 @@
      <axis xyz="0 0 1"/>
      <!-- TODO(ff): not currently set because it's not yet supported -->
      <!-- <limit effort="2000" velocity="${max_rot_velocity}" /> -->
-     <parent link="imu"/>
+     <parent link="camera"/>
      <child link="iris/rotor_2"/>
    </joint>
    <link name="iris/rotor_2">
@@ -340,7 +340,7 @@
      <axis xyz="0 0 1"/>
      <!-- TODO(ff): not currently set because it's not yet supported -->
      <!-- <limit effort="2000" velocity="${max_rot_velocity}" /> -->
-     <parent link="imu"/>
+     <parent link="camera"/>
      <child link="iris/rotor_3"/>
    </joint>
    <link name="iris/rotor_3">
