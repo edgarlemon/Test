@@ -234,7 +234,7 @@
      <axis xyz="0 0 1"/>
      <!-- TODO(ff): not currently set because it's not yet supported -->
      <!-- <limit effort="2000" velocity="${max_rot_velocity}" /> -->
-     <parent link="iris/base_link"/>
+     <parent link="imu"/>
      <child link="iris/rotor_1"/>
    </joint>
    <link name="iris/rotor_1">
@@ -287,7 +287,7 @@
      <axis xyz="0 0 1"/>
      <!-- TODO(ff): not currently set because it's not yet supported -->
      <!-- <limit effort="2000" velocity="${max_rot_velocity}" /> -->
-     <parent link="iris/base_link"/>
+     <parent link="imu"/>
      <child link="iris/rotor_2"/>
    </joint>
    <link name="iris/rotor_2">
@@ -340,7 +340,7 @@
      <axis xyz="0 0 1"/>
      <!-- TODO(ff): not currently set because it's not yet supported -->
      <!-- <limit effort="2000" velocity="${max_rot_velocity}" /> -->
-     <parent link="iris/base_link"/>
+     <parent link="imu"/>
      <child link="iris/rotor_3"/>
    </joint>
    <link name="iris/rotor_3">
