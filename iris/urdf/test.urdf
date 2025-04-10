@@ -39,7 +39,7 @@
        <geometry>
          <cylinder length="0.2" radius="0.009"/>
        </geometry>
-       <origin rpy="4.71 1.57 3.14" xyz="0 0 -0.125"/>
+       <origin rpy="0 0 0" xyz="0 0 -0.125"/>
        <material name="blue">
          <color rgba="0 0 .8 1"/>
        </material>
@@ -59,7 +59,7 @@
    <joint name="stand_0_joint" type="fixed">
      <parent link="camera"/>
      <child link="stand_0"/>
-     <origin xyz="0.13 -0.22 0.023"/>
+     <origin rpy="4.71 1.57 3.14" xyz="0.13 -0.22 0.023"/>
    </joint> 
    
    <link name="stand_1">
@@ -67,7 +67,7 @@
        <geometry>
          <cylinder length="0.2" radius="0.009"/>
        </geometry>
-       <origin rpy="4.71 1.57 3.14" xyz="0 0 -0.125"/>
+       <origin rpy="0 0 0" xyz="0 0 -0.125"/>
        <material name="blue">
          <color rgba="0 0 .8 1"/>
        </material>
@@ -87,7 +87,7 @@
    <joint name="stand_1_joint" type="fixed">
      <parent link="camera"/>
      <child link="stand_1"/>
-     <origin xyz="-0.13 0.2 0.023"/>
+     <origin rpy="4.71 1.57 3.14" xyz="-0.13 0.2 0.023"/>
    </joint> 
    
    <link name="stand_2">
@@ -95,7 +95,7 @@
        <geometry>
          <cylinder length="0.2" radius="0.009"/>
        </geometry>
-       <origin rpy="4.71 1.57 3.14" xyz="0 0 -0.125"/>
+       <origin rpy="0 0 0" xyz="0 0 -0.125"/>
        <material name="blue">
          <color rgba="0 0 .8 1"/>
        </material>
@@ -115,7 +115,7 @@
    <joint name="stand_2_joint" type="fixed">
      <parent link="camera"/>
      <child link="stand_2"/>
-     <origin xyz="0.13 0.22 0.023"/>
+     <origin rpy="4.71 1.57 3.14" xyz="0.13 0.22 0.023"/>
    </joint> 
    
    <link name="stand_3">
@@ -123,7 +123,7 @@
        <geometry>
          <cylinder length="0.2" radius="0.009"/>
        </geometry>
-       <origin rpy="4.71 1.57 3.14" xyz="0 0 -0.125"/>
+       <origin rpy="0 0 " xyz="0 0 -0.125"/>
        <material name="blue">
          <color rgba="0 0 .8 1"/>
        </material>
@@ -143,7 +143,7 @@
    <joint name="stand_3_joint" type="fixed">
      <parent link="camera"/>
      <child link="stand_3"/>
-     <origin xyz="-0.13 -0.2 0.023"/>
+     <origin rpy="4.71 1.57 3.14" xyz="-0.13 -0.2 0.023"/>
    </joint> 
    
    
@@ -177,7 +177,7 @@
      </plugin>
    </gazebo>
    <joint name="iris/rotor_0_joint" type="continuous">
-     <origin rpy="0 0 0" xyz="0.13 -0.22 0.023"/>
+     <origin rpy="4.71 1.57 3.14" xyz="0.13 -0.22 0.023"/>
      <axis xyz="0 0 1"/>
      <!-- TODO(ff): not currently set because it's not yet supported -->
      <!-- <limit effort="2000" velocity="${max_rot_velocity}" /> -->
@@ -230,7 +230,7 @@
      <material>Gazebo/Blue</material>
    </gazebo>
    <joint name="iris/rotor_1_joint" type="continuous">
-     <origin rpy="0 0 0" xyz="-0.13 0.2 0.023"/>
+     <origin rpy="4.71 1.57 3.14" xyz="-0.13 0.2 0.023"/>
      <axis xyz="0 0 1"/>
      <!-- TODO(ff): not currently set because it's not yet supported -->
      <!-- <limit effort="2000" velocity="${max_rot_velocity}" /> -->
@@ -283,7 +283,7 @@
      <material>Gazebo/Red</material>
    </gazebo>
    <joint name="iris/rotor_2_joint" type="continuous">
-     <origin rpy="0 0 " xyz="0.13 0.22 0.023"/>
+     <origin rpy="4.71 1.57 3.14" xyz="0.13 0.22 0.023"/>
      <axis xyz="0 0 1"/>
      <!-- TODO(ff): not currently set because it's not yet supported -->
      <!-- <limit effort="2000" velocity="${max_rot_velocity}" /> -->
@@ -336,7 +336,7 @@
      <material>Gazebo/Blue</material>
    </gazebo>
    <joint name="iris/rotor_3_joint" type="continuous">
-     <origin rpy="0 0 0" xyz="-0.13 -0.2 0.023"/>
+     <origin rpy="4.71 1.57 3.14" xyz="-0.13 -0.2 0.023"/>
      <axis xyz="0 0 1"/>
      <!-- TODO(ff): not currently set because it's not yet supported -->
      <!-- <limit effort="2000" velocity="${max_rot_velocity}" /> -->
