@@ -6,7 +6,7 @@
  <robot name="iris">
    <link name="imu"/>
    <joint name="iris/base_joint" type="fixed">
-     <origin rpy="1.57 0 1.57" xyz="0 0 0"/>
+     <origin rpy="0 1.57 1.57" xyz="0 0 0"/>
      <parent link="imu"/>
      <child link="iris/base_link_inertia"/>
    </joint>
@@ -18,13 +18,13 @@
        <inertia ixx="0.0347563" ixy="0.0" ixz="0.0" iyy="0.0458929" iyz="0.0" izz="0.0977"/>
      </inertial>
      <visual>
-       <origin rpy="0 0 0" xyz="0 0 0"/>
+       <origin rpy="0 1.57 1.57" xyz="0 0 0"/>
        <geometry>
          <mesh filename="package://iris/meshes/iris.dae" scale="1 1 1"/>
        </geometry>
      </visual>
      <collision>
-       <origin rpy="0 0 0" xyz="0 0 0"/>
+       <origin rpy="0 1.57 1.57" xyz="0 0 0"/>
        <geometry>
          <box size="0.47 0.47 0.11"/>
          <!-- [m] [m] [m] -->
@@ -39,7 +39,7 @@
        <geometry>
          <cylinder length="0.2" radius="0.009"/>
        </geometry>
-       <origin rpy="0 0 0" xyz="0 0 -0.125"/>
+       <origin rpy="0 1.57 1.57" xyz="0 0 -0.125"/>
        <material name="blue">
          <color rgba="0 0 .8 1"/>
        </material>
