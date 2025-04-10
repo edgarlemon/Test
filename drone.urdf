@@ -4,10 +4,10 @@
 <!-- |    EDITING THIS FILE BY HAND IS NOT RECOMMENDED                                 | -->
 <!-- =================================================================================== -->
 <robot name="iris">
-  <link name="imu"/>
+  <link name="cam0"/>
   <joint name="iris/base_joint" type="fixed">
     <origin rpy="0 0 0" xyz="0 0 0"/>
-    <parent link="imu"/>
+    <parent link="cam0"/>
     <child link="iris/base_link_inertia"/>
   </joint>
   <link name="iris/base_link_inertia">
@@ -57,7 +57,7 @@
   </link>
 
   <joint name="stand_0_joint" type="fixed">
-    <parent link="imu"/>
+    <parent link="cam0"/>
     <child link="stand_0"/>
     <origin xyz="0.13 -0.22 0.023"/>
   </joint> 
@@ -85,7 +85,7 @@
   </link>
 
   <joint name="stand_1_joint" type="fixed">
-    <parent link="imu"/>
+    <parent link="cam0"/>
     <child link="stand_1"/>
     <origin xyz="-0.13 0.2 0.023"/>
   </joint> 
@@ -113,7 +113,7 @@
   </link>
 
   <joint name="stand_2_joint" type="fixed">
-    <parent link="imu"/>
+    <parent link="cam0"/>
     <child link="stand_2"/>
     <origin xyz="0.13 0.22 0.023"/>
   </joint> 
@@ -141,7 +141,7 @@
   </link>
 
   <joint name="stand_3_joint" type="fixed">
-    <parent link="imu"/>
+    <parent link="cam0"/>
     <child link="stand_3"/>
     <origin xyz="-0.13 -0.2 0.023"/>
   </joint> 
