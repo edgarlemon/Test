@@ -20,7 +20,7 @@
      <visual>
        <origin rpy="0 0 0" xyz="0 0 0"/>
        <geometry>
-         <mesh filename="package://iris_description/meshes/iris.dae" scale="1 1 1"/>
+         <mesh filename="package://iris/meshes/iris.dae" scale="1 1 1"/>
        </geometry>
      </visual>
      <collision>
@@ -192,7 +192,7 @@
      </inertial>
      <visual>
        <geometry>
-         <mesh filename="package://iris_description/meshes/propeller_ccw.dae" scale="0.1 0.1 0.1"/>
+         <mesh filename="package://iris/meshes/propeller_ccw.dae" scale="0.1 0.1 0.1"/>
          <!-- The propeller meshes have a radius of 1m -->
          <!-- <box size="${2*radius_rotor} 0.01 0.005"/> -->
        </geometry>
@@ -245,7 +245,7 @@
      </inertial>
      <visual>
        <geometry>
-         <mesh filename="package://iris_description/meshes/propeller_ccw.dae" scale="0.1 0.1 0.1"/>
+         <mesh filename="package://iris/meshes/propeller_ccw.dae" scale="0.1 0.1 0.1"/>
          <!-- The propeller meshes have a radius of 1m -->
          <!-- <box size="${2*radius_rotor} 0.01 0.005"/> -->
        </geometry>
@@ -298,7 +298,7 @@
      </inertial>
      <visual>
        <geometry>
-         <mesh filename="package://iris_description/meshes/propeller_cw.dae" scale="0.1 0.1 0.1"/>
+         <mesh filename="package://iris/meshes/propeller_cw.dae" scale="0.1 0.1 0.1"/>
          <!-- The propeller meshes have a radius of 1m -->
          <!-- <box size="${2*radius_rotor} 0.01 0.005"/> -->
        </geometry>
@@ -351,7 +351,7 @@
      </inertial>
      <visual>
        <geometry>
-         <mesh filename="package://iris_description/meshes/propeller_cw.dae" scale="0.1 0.1 0.1"/>
+         <mesh filename="package://iris/meshes/propeller_cw.dae" scale="0.1 0.1 0.1"/>
          <!-- The propeller meshes have a radius of 1m -->
          <!-- <box size="${2*radius_rotor} 0.01 0.005"/> -->
        </geometry>
