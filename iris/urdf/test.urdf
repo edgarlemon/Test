@@ -172,7 +172,7 @@
    <gazebo>
      <plugin filename="librotors_gazebo_multirotor_base_plugin.so" name="multirotor_base_plugin">
        <robotNamespace>iris</robotNamespace>
-       <linkName>iris/base_link</linkName>
+       <linkName>imu</linkName>
        <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
      </plugin>
    </gazebo>
@@ -181,7 +181,7 @@
      <axis xyz="0 0 1"/>
      <!-- TODO(ff): not currently set because it's not yet supported -->
      <!-- <limit effort="2000" velocity="${max_rot_velocity}" /> -->
-     <parent link="iris/base_link"/>
+     <parent link="imu"/>
      <child link="iris/rotor_0"/>
    </joint>
    <link name="iris/rotor_0">
