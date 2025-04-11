@@ -22,6 +22,9 @@
        <geometry>
          <mesh filename="package://iris/meshes/iris.dae" scale="4 4 4"/>
        </geometry>
+       <material name= "gold">
+         <color rgba= "0 1 0 1"/>
+       </material>
      </visual>
      <collision>
        <origin rpy="0 0 0" xyz="0 0 0"/>
